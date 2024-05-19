@@ -49,12 +49,10 @@ const Topbar = () => {
           </Link>
         </Button>
       </div>
-      <div className="lg:hidden">
+      <div className="lg:hidden flex flex-col justify-center items-center">
         <Sheet>
           <SheetTrigger>
-            <Button variant="outline">
-              <FaHamburger size={16} color="#5D0265" />
-            </Button>
+            <FaHamburger size={16} color="#5D0265" />
           </SheetTrigger>
           <SheetContent side="left">
             <SheetHeader>

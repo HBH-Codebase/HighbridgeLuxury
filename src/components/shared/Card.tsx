@@ -9,7 +9,7 @@ import {
 import { FaArrowRight } from "react-icons/fa6"
 import { Link } from "react-router-dom"
 
-export function CardComponent({ id, icon, heading, content }: { id: number, icon: React.ReactNode, heading: string | undefined, content: string}) {
+export function CardComponent({ id, icon, heading, content }: { id: number, icon?: React.ReactNode, heading: string | undefined, content: string}) {
   return (
     <Card className="w-[180ox] md:w-[170px] lg:w-[200px] bg-gray-50 outline-none border-none group hover:bg-[#5D0265]/75 transition-all">
       <CardHeader>

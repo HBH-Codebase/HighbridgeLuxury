@@ -13,7 +13,7 @@ const HeroSection = () => {
         />
       </div>
       <div className='absolute inset-0 w-full flex justify-center md:justify-start items-center'>
-        <div className="w-[80%] mx-auto md:w-96 md:mx-0 md:pl-10 lg:pl-20 z-10">
+        <div className="mx-auto md:w-96 md:mx-0 md:pl-10 lg:pl-20 z-10">
           <h1 className='text-[30px] text-white tracking-wide font-bold leading-9 mb-3'>
             Elevate Your Vision with Luxury Real Estate Excellence
           </h1>

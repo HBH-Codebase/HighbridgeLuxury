@@ -5,7 +5,6 @@ const Testimonials = () => {
   const [ projects, setProjects ] = useState(0);
   const [ clients, setClients ] = useState(0);
   const [ yearsOfExperience, setYearsOfExperience ] =  useState(0);
-  let count = 0;
 
   useEffect(() => {
     const interval = setInterval(() => {

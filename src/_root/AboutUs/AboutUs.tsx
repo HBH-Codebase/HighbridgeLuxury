@@ -10,18 +10,18 @@ const AboutUs = () => {
       <Topbanner text="About Us" />
       <div className="w-full md:w-[90%] mx-auto">
         <div className="flex flex-col md:flex-row items-start gap-10 px-6 pb-20 md:px-10 py-20">
-          <div className="w-full overflow-hidden order-2 lg:order-1">
+          <div className="w-full overflow-hidden order-2 lg:order-1 pt-20">
             <img
               src="/assets/montreal.jpg"
               alt="about hero"
-              className="object-fill w-full"
+              className="object-fill w-full rounded-lg rounded-tl-[20%] rounded-br-[20%]"
             />
           </div>
           <div className="w-full">
             <SectionHeading text='About Us' />
             <div className="w-full md:w-96 flex flex-col justify-start items-between gap-6">
               <h1 className="text-lg md:text-xl lg:text-2xl font-bold tracking-wider leading-7">Let's Build Something Strong Together</h1>
-              <p className="text-sm lg:text-base text-gray-400 tracking-wider leading-7">In the context of luxury estate development, building your vision refers to taking architectural plans</p>
+              <p className="text-sm lg:text-base text-slate-600 tracking-wider leading-7">We provide the most professional, informative, loyal and dedicated service in the Real Estate sector. The best interest/ Concerns of our clients will always come first on our daily priorities and routine. Our vision is to be the most client centric organization, to build best in-class platforms where clients can come to find and discover every need in Real Estate</p>
               <div className="w-full flex justify-between items-center">
                 <div className="w-80 flex justify-start items-center gap-4 px-3 py-2">
                   <FaHouseCircleXmark size={30} color="black" /> <h1 className="text-xs lg:text-sm font-bold tracking-wider leding-3">
@@ -49,6 +49,17 @@ const AboutUs = () => {
               </div>
             </div>
           </div>
+        </div>
+      </div>
+
+      <div className="flex flex-col lg:flex-row justify-center items-start gap-10 py-32">
+        <div className="flex flex-col gap-6 w-96">
+          <h1 className="text-xl md:text-2xl font-bold">Our Vision</h1>
+          <p className="text-lg font-semibold text-slate-500">Our vision is to be the most client centric organization, to build best in-class platforms where clients can come to find and discover every need in Real Estate.</p>
+        </div>
+        <div className="flex flex-col gap-6 w-96">
+          <h1 className="text-xl md:text-2xl font-bold">Our Mission</h1>
+          <p className="text-lg font-semibold text-slate-500">Our team approach philosophy ensures your needs are important to each and every members of our organization, thereby creating unparalleled opportunities to all our clients looking to own or sell Real Estate; as we are most dedicated to the development of long term client relationship; we are committed to delivering a dream of affordable luxury homes.</p>
         </div>
       </div>
       <div className="w-full bg-gray-50 py-20 px-4">

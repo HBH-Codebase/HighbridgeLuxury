@@ -20,15 +20,15 @@ const Topbar = () => {
   return (
     <section className="w-full flex justify-between px-6">
       <div className="w-full flex justify-between items-center">
-        <div className="outline-none">
-          <NavLink to="/">
+        <div className="flex justify-between items-center">
+          <NavLink to="/" className='w-16 h-16 rounded-full'>
             <img
-              src="/assets/hbLogobar.png"
+              src="/assets/logos/home1.jpg"
               alt="logo"
               className="object-contain"
-              width={160}
               />
           </NavLink>
+          <span className="text-lg text-purple-950 font-bold leading-6 tracking-wide w-64">Highbridge Luxury Development LTD</span>
         </div>
         <div className="hidden lg:block">
           <ul className="flex-between">

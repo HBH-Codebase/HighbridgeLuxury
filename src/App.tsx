@@ -3,15 +3,18 @@ import {
   RouterProvider,
 } from "react-router-dom"
 import Root from "./Root"
+import { HelmetProvider } from "react-helmet-async";
 
 const router = createBrowserRouter([
-  {path: '*', element: <Root />},
+  {path: '/', element: <Root />},
 ]);
 
 
 function App() {
   return (
-    <RouterProvider router={router} />
+    <HelmetProvider>
+      <RouterProvider router={router} />
+    </HelmetProvider>
   )
 }
 

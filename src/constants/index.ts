@@ -39,68 +39,16 @@ export type IProperties = {
 export const Properties =<IProperties[]> [
   {
     id: 1,
-    name: 'Highbridge Luxury',
+    name: 'Majestic Lagos',
     features: {
       bedrooms: 2,
       parkingSpace: 2,
       Toilet: 3
     },
     price: '76,000,000',
-    image: 'assets/property-1.jpg',
+    image: 'assets/logos/majestcLagos.jpg',
     description: 'luxury apartments to meet all your luxurious lifestyle which should elevate your status in the community',
-    location: 'Abijo, GRA'
-  },
-  {
-    id: 2,
-    name: 'Highbridge Luxury',
-    features: {
-      bedrooms: 2,
-      parkingSpace: 2,
-      Toilet: 3
-    },
-    price: '76,000,000',
-    image: 'assets/property-1.jpg',
-    description: 'luxury apartments to meet all your luxurious lifestyle which should elevate your status in the community',
-    location: 'Abijo, GRA'
-  },
-  {
-    id: 3,
-    name: 'Highbridge Luxury',
-    features: {
-      bedrooms: 2,
-      parkingSpace: 2,
-      Toilet: 3
-    },
-    price: '76,000,000',
-    image: 'assets/property-1.jpg',
-    description: 'luxury apartments to meet all your luxurious lifestyle which should elevate your status in the community',
-    location: 'Abijo, GRA'
-  },
-  {
-    id:4,
-    name: 'Highbridge Luxury',
-    features: {
-      bedrooms: 2,
-      parkingSpace: 2,
-      Toilet: 3
-    },
-    price: '76,000,000',
-    image: 'assets/property-1.jpg',
-    description: 'luxury apartments to meet all your luxurious lifestyle which should elevate your status in the community',
-    location: 'Abijo, GRA'
-  },
-  {
-    id: 5,
-    name: 'Highbridge Luxury',
-    features: {
-        bedrooms: 2,
-        parkingSpace: 2,
-        Toilet: 3
-      },
-    price: '76,000,000',
-    image: 'assets/property-1.jpg',
-    description: 'luxury apartments to meet all your luxurious lifestyle which should elevate your status in the community',
-    location: 'Abijo, GRA'
+    location: 'Ibeju Lekki'
   }
 ]
 
@@ -132,7 +80,21 @@ export const Services: IServices[] = [
   }
 ]
 
-export const OurProjects = [];
+export const OurProjects = [
+  {
+    id: 1,
+    name: 'Majestic Lagos',
+    features: {
+      bedrooms: 2,
+      parkingSpace: 2,
+      Toilet: 3
+    },
+    price: '76,000,000',
+    image: 'assets/logos/majestcLagos.jpg',
+    description: 'luxury apartments to meet all your luxurious lifestyle which should elevate your status in the community',
+    location: 'Ibeju Lekki'
+  }
+];
 
 export interface ITestimonials {
   name: string;
@@ -140,8 +102,8 @@ export interface ITestimonials {
   testimony: string;
 }
 
-export const Reviews: ITestimonials[] = [ {
-
+export const Reviews: ITestimonials[] = [
+  {
     name: 'Jerry Lukman',
     image: '',
     testimony: 'Absolutely stunning!! The attention to detail in this home is remarkable.',

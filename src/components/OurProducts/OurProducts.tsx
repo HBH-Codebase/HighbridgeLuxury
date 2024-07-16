@@ -1,4 +1,5 @@
 import { OurProjects } from "@/constants"
+import PropertyCard from "../shared/propertyCard/PropertyCard"
 
 const OurProducts = () => {
   return (
@@ -14,7 +15,22 @@ const OurProducts = () => {
           We are known for mordern high-class projects and structures. Highbriddge Luxury has lots of projects ranging from lands, buildings, architectural designs and project management as well. We have handled over 500+ projects nationwide and our legacy preceeds us.
         </p>
         <div className="flex flex-1 justify-center items-center py-10">
-          {OurProjects.length > 0 ? <div>Products are not available</div> : <p className="text-slate-400 font-semibold text-center">No products yet</p>}
+          {OurProjects.length > 0 ?
+            <div>
+              {OurProjects.map((item) => (
+                <PropertyCard
+                  name={item.name}
+                  image={item.image}
+                  price={item.price}
+                  features={item.features}
+                  id={item.id}
+                  description={item.description}
+                  location={item.location}
+                />
+              ))}
+            </div>
+            :
+          <p className="text-slate-400 font-semibold text-center">No products yet</p>}
         </div>
       </div>
     </div>

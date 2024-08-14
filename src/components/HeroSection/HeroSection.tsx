@@ -1,31 +1,25 @@
-import { Link } from "react-router-dom"
-import { Button } from "../ui/button"
+import { Link } from "react-router-dom";
+import { Button } from "../ui/button";
+import hero from '/assets/stepdown.jpg';
 
 const HeroSection = () => {
   return (
-    <>
-      <div className="absolute inset-0 w-full bg-gradient-to-tr from-purple-950 to-purple-100/10"/>
+    <div className="px-6 md:px-10 lg:px-[6rem] flex-between flex-col lg:flex-row gap-5 py-10">
+      <div className='flex-between flex-col gap-5'>
+        <h1 className='text-base text-secondary-text tracking-wide font-semibold leading-9'>
+          LUXURY REAL ESTATE EXCELLENCE
+        </h1>
+        <p className="text-4xl md:text-[3rem] text-primary-text text-center lg:text-left font-bold leading-[3.5rem] tracking-tight">Real Estate Solutions For Your Every Need</p>
+        <p className="font-normal text-base text-gray-400 text-center lg:text-left tracking-wide leading-8">Welcome to the pinnacle of luxury real estate, where innovation meets elegance, and where every project is a testament to our unwavering commitment to excellence. </p>
+      </div>
       <div className="w-full min-h-dvh">
         <img
-          src='/assets/stepdown.jpg'
+          src={hero}
           alt='hero'
           className='object-cover h-dvh w-full'
         />
       </div>
-      <div className='absolute inset-0 w-full flex justify-center md:justify-start items-center'>
-        <div className="mx-auto md:w-96 md:mx-0 md:pl-10 lg:pl-20 z-10">
-          <h1 className='text-[30px] text-white tracking-wide font-bold leading-9 mb-3'>
-            Elevate Your Vision with Luxury Real Estate Excellence
-          </h1>
-          <p className="font-normal text-sm text-gray-400 tracking-wide">Welcome to the pinnacle of luxury real estate, where innovation meets elegance, and where every project is a testament to our unwavering commitment to excellence. </p>
-          <Button variant="outline" className="px-5 mt-6 border border-[#EFDE6B] bg-transparent group hover:bg-[#EFDE6B]">
-            <Link to="#" className="text-md text-gray-300 font-semibold group-hover:text-black">
-              Join Us
-            </Link>
-          </Button>
-        </div>
-      </div>
-    </>
+    </div>
   )
 }
 

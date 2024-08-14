@@ -1,7 +1,8 @@
 import { Link, NavLink, useLocation } from "react-router-dom"
 import { NavLinks } from "../constants"
-import { Button } from "./ui/button"
-import { FaHamburger } from "react-icons/fa";
+import { Button } from "./ui/button";
+
+import logo from "/assets/logos/home1.jpg";
 import {
   Sheet,
   SheetClose,
@@ -12,30 +13,28 @@ import {
   SheetTrigger,
 } from "@/components/ui/sheet";
 import SocialMedia from "./shared/SocialMedia";
+import { RiMenu3Line } from "react-icons/ri";
 
 
 const Topbar = () => {
   const isActive = useLocation().pathname;
   
   return (
-    <section className="w-full flex justify-between px-6">
+    <>
       <div className="w-full flex justify-between items-center">
-        <div className="flex justify-between items-center">
+        <div className="flex-between gap-10">
           <NavLink to="/" className='w-16 h-16 rounded-full'>
             <img
-              src="/assets/logos/home1.jpg"
+              src={logo}
               alt="logo"
-              className="object-contain"
-              />
+              className="w-full h-full object-contain"
+            />
           </NavLink>
-          <span className="text-lg text-purple-950 font-bold leading-6 tracking-wide w-64">Highbridge Luxury Development LTD</span>
-        </div>
-        <div className="hidden lg:block">
-          <ul className="flex-between">
+          <ul className="hidden lg:flex-between">
             {NavLinks.map((item, idx) => {
               return (
-                <li key={item.label + idx} className="flex-1 w-32">
-                  <NavLink to={item.path} className={`text-md text-gray-600 ${isActive === item.path ? 'font-bold' : 'font-normal'} hover:text-black hover:font-semibold transition-all`}>
+                <li key={item.label + idx} className="flex-1 w-36 text-center text-xl text-primary-text">
+                  <NavLink to={item.path} className={`text-md ${isActive === item.path ? 'font-bold text-white' : 'font-normal'} hover:text-white hover:font-semibold transition-all`}>
                     {item.label}
                   </NavLink>
                 </li>
@@ -43,39 +42,40 @@ const Topbar = () => {
             })}
           </ul>
         </div>
-        <Button variant="outline" className="rounded-md bg-[#5D0265] hover:bg-[#5D0265]/75 hidden lg:block" asChild>
-          <Link to="/contact-us" className="text-gray-300 hover:text-white">
+        <Button className="rounded-md bg-primary border-none hidden lg:flex-center " asChild>
+          <Link to="/contact-us" className="text-secondary hover:text-white text-xl text-center">
             Contact Us
           </Link>
         </Button>
       </div>
-      <div className="lg:hidden flex flex-col justify-center items-center">
+      <div className="lg:hidden flex-center flex-col relative">
         <Sheet>
           <SheetTrigger>
-            <FaHamburger size={16} color="#5D0265" />
+            <RiMenu3Line size={32} color="white" />
           </SheetTrigger>
           <SheetContent side="left">
             <SheetHeader>
               <SheetTitle>
-                <div className="outline-none w-full pt-20">
+                <div className="outline-none">
                   <NavLink to="/">
                     <img
-                      src="/assets/hbLogobar.png"
+                      src={logo}
                       alt="logo"
-                      className="object-contain"
-                      width={160}
-                      />
+                      className="object-contain rounded-full"
+                      width={44}
+                      height={44}
+                    />
                   </NavLink>
                 </div>
               </SheetTitle>
             </SheetHeader>
-            <div className="lg:hidden flex flex-col items-between justify-center">
+            <div className="lg:hidden flex flex-col">
               <ul className="mt-10">
                 {NavLinks.map((item, idx) => {
                   return (
-                    <li key={item.label + idx} className="flex-1 w-full text-center my-6">
+                    <li key={item.label + idx} className="flex-1 w-full text-left my-6">
                       <SheetClose asChild>
-                        <NavLink to={item.path} className={`text-md text-gray-600 ${isActive === item.path ? 'font-bold' : 'font-normal'} hover:text-black hover:font-semibold transition-all`}>
+                        <NavLink to={item.path} className={`text-xl text-white ${isActive === item.path ? 'font-bold' : 'font-normal'}`}>
                           {item.label}
                         </NavLink>
                       </SheetClose>
@@ -83,14 +83,14 @@ const Topbar = () => {
                   )
                 })}
               </ul>
-              <Button variant="outline" className="w-[60%] mx-auto rounded-md bg-[#5D0265] hover:bg-[#5D0265]/75" asChild>
-                <Link to="/contact-us" className="text-gray-300 hover:text-white">
+              <Button variant="outline" className="w-[60%] mt-24 rounded-md bg-primary border-none outline-none flex-center px-12" asChild>
+                <Link to="/contact-us" className="text-secondary text-xl">
                   Contact Us
                 </Link>
               </Button>
             </div>
             <SheetFooter>
-              <div className="w-full mt-10">
+              <div className="w-full absolute bottom-5 right-5">
                 <SheetClose asChild>
                   <SocialMedia direction="horizontal" />
                 </SheetClose>
@@ -99,7 +99,7 @@ const Topbar = () => {
           </SheetContent>
         </Sheet>
       </div>
-    </section>
+    </>
   )
 }
 

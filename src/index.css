@@ -4,34 +4,20 @@
 
 @layer base {
   :root {
-    --background: #1A1B41;
-    --primary: #730071;
-    --secondary: #FFCF56;
+    --background: #231942;
+    --gradient-backround: radial-gradient(circle at 100% 8%, #502274 0%, #231942 100%);
+    
+    --primary-text: #C6CAED;
+    --secondary-text: #ADA8BE;
 
-    --color-text: #BDD5EA;
-    --color-subtext: #577399;
+    --primary: #A42CD6;
+    --secondary: #F2AF29;
 
-    --gradient__background: 
-    {  
-        /* global 92%+ browsers support */
-        background: radial-gradient(ellipse at 20% -60%, rgba(115, 0, 113, 1) 5%, rgba(26, 27, 65, 1) 100%);
-    }
   }
 }
 
-@layer base {
-  * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
-  body {
-    background-color: var(--background)
-  }
-  a {
-    color: unset;
-    text-decoration: none;
-  }
+@layer components {
+  
 }
 
 @layer utilities {
@@ -41,5 +27,9 @@
 
   .flex-center {
     @apply flex justify-center items-center;
+  }
+
+  .flex-around {
+    @apply flex justify-around items-center;
   }
 }

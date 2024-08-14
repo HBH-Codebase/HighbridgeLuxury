@@ -4,8 +4,8 @@ import { Outlet } from "react-router-dom"
 
 const RootLayout = () => {
   return (
-    <div className="w-full border">
-      <header className="flex-between py-2 px-4 w-full overflow-hidden bg-gray-50/5 rounded-sm">
+    <main className="w-full overflow-hidden bg-background">
+      <header className="px-6 lg:container flex-between py-4">
         <Topbar />
       </header>
 
@@ -16,7 +16,7 @@ const RootLayout = () => {
       <footer>
         <Footer />
       </footer>
-    </div>
+    </main>
   )
 }
 

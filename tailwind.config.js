@@ -10,52 +10,21 @@ module.exports = {
   prefix: "",
   theme: {
     container: {
-      center: true,
-      padding: "2rem 4rem",
+      padding: "6rem",
       screens: {
         "2xl": "1400px",
-        "xl": "1050px",
-        "lg": "960px",
-        "md": "550px",
-        "sm": "360px",
       },
     },
     extend: {
       colors: {
-        background: "hex(var(--background))",
-        primary: {
-          DEFAULT: "hsl(var(--primary))",
-          foreground: "hsl(var(--primary-foreground))",
-        },
-        secondary: {
-          DEFAULT: "hsl(var(--secondary))",
-          foreground: "hsl(var(--secondary-foreground))",
-        },
-        destructive: {
-          DEFAULT: "hsl(var(--destructive))",
-          foreground: "hsl(var(--destructive-foreground))",
-        },
-        muted: {
-          DEFAULT: "hsl(var(--muted))",
-          foreground: "hsl(var(--muted-foreground))",
-        },
-        accent: {
-          DEFAULT: "hsl(var(--accent))",
-          foreground: "hsl(var(--accent-foreground))",
-        },
-        popover: {
-          DEFAULT: "hsl(var(--popover))",
-          foreground: "hsl(var(--popover-foreground))",
-        },
-        card: {
-          DEFAULT: "hsl(var(--card))",
-          foreground: "hsl(var(--card-foreground))",
-        },
-      },
-      borderRadius: {
-        lg: "var(--radius)",
-        md: "calc(var(--radius) - 2px)",
-        sm: "calc(var(--radius) - 4px)",
+        primary: "var(--primary)",
+        secondary: "var(--secondary)",
+
+        "primary-text": "var(--primary-text)",
+        "secondary-text": "var(--secondary-text)",
+
+        background: "var(--background)",
+        "gradient-bg": "var(--gradient-background)",
       },
     },
   },

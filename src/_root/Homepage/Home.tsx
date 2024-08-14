@@ -10,39 +10,22 @@ import SEO from "@/components/SEO/SEO"
 const Home = () => {
   return (
     <>
-    <SEO
-      name="Highbridge Luxury Development Limited"
-      title="Home | Affordable Luxury Apartments In Lagos - Call us Now"
-      description="Highbridge Luxury Development Limited is committed to building your dream home. We build, buy and sell landed properties"
-      type="article"
-    />
-    <section className='relative w-full'>
-      <HeroSection />
-    </section>
-    
-    <section className="w-full flex justify-center items-center py-40">
+      <SEO
+        name="Highbridge Luxury Development Limited"
+        title="Home | Affordable Luxury Apartments In Lagos - Call us Now"
+        description="Highbridge Luxury Development Limited is committed to building your dream home. We build, buy and sell landed properties"
+        type="article"
+      />
+      <section className="bg-gradient-bg">
+        <HeroSection />
+      </section>
+
       <Mission />
-    </section>
-
-    <section className="w-full">
       <Project />
-    </section>
-
-    <section className="w-full flex justify-center items-center">
       <OurServices />
-    </section>
-
-    <section className="w-full py-40 flex justify-center items-center">
       <OurProducts />
-    </section>
-
-    <section className="w-full py-40 flex flex-col justify-center items-center">
       <Testimonials />
-    </section>
-    
-    <section className="w-full py-40 flex flex-col justify-center items-center">
       <Blog />
-    </section>
     </>
   )
 }

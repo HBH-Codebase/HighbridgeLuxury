@@ -20,15 +20,15 @@ const Home = () => {
       <HeroSection />
     </section>
     
-    <section className="w-full flex justify-center items-center py-40 bg-slate-100">
+    <section className="w-full flex justify-center items-center py-40">
       <Mission />
     </section>
 
-    <section className="bg-gray-50 w-full">
+    <section className="w-full">
       <Project />
     </section>
 
-    <section className="w-full flex justify-center items-center bg-slate-100 py-40">
+    <section className="w-full flex justify-center items-center">
       <OurServices />
     </section>
 
@@ -40,7 +40,7 @@ const Home = () => {
       <Testimonials />
     </section>
     
-    <section className="w-full py-40 flex flex-col justify-center items-center bg-slate-100">
+    <section className="w-full py-40 flex flex-col justify-center items-center">
       <Blog />
     </section>
     </>

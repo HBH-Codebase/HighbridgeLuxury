@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom"
 import { Button } from "../ui/button"
 
-const HeroSection = () => {
+const     HeroSection = () => {
   return (
     <>
       <div className="absolute inset-0 w-full bg-gradient-to-tr from-purple-950 to-purple-100/10"/>

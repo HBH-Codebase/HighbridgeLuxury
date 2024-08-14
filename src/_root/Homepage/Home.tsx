@@ -6,6 +6,7 @@ import OurProducts from "@/components/OurProducts/OurProducts"
 import Testimonials from "@/components/Testimonials/Testimonials"
 import Blog from "@/components/Blog/Blog"
 import SEO from "@/components/SEO/SEO"
+import Numbers from "@/components/Numbers/Numbers"
  
 const Home = () => {
   return (
@@ -16,10 +17,11 @@ const Home = () => {
         description="Highbridge Luxury Development Limited is committed to building your dream home. We build, buy and sell landed properties"
         type="article"
       />
-      <section className="bg-gradient-bg">
+      <section className="gradient-bg">
         <HeroSection />
       </section>
 
+      <Numbers />
       <Mission />
       <Project />
       <OurServices />

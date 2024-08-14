@@ -10,6 +10,7 @@ module.exports = {
   prefix: "",
   theme: {
     container: {
+      center: true,
       padding: "6rem",
       screens: {
         "2xl": "1400px",
@@ -24,7 +25,7 @@ module.exports = {
         "secondary-text": "var(--secondary-text)",
 
         background: "var(--background)",
-        "gradient-bg": "var(--gradient-background)",
+        "gradient-primary": "var(--primary-gradient)",
       },
     },
   },

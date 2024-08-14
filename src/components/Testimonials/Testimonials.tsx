@@ -1,66 +1,9 @@
 import { Reviews } from "@/constants";
-import { useEffect, useState } from "react"
 
 const Testimonials = () => {
-  const [ projects, setProjects ] = useState(0);
-  const [ clients, setClients ] = useState(0);
-  const [ yearsOfExperience, setYearsOfExperience ] =  useState(0);
-
-  useEffect(() => {
-    const interval = setInterval(() => {
-      setProjects((prev) => {
-        if (prev < 1000) {
-          return prev + 1;
-        }
-        return prev;
-      });
-    }, 10)
-
-    return () => clearInterval(interval);
-  }, []);
-
-  useEffect(() => {
-    const interval = setInterval(() => {
-      setClients((prev) => {
-        if (prev < 500) {
-          return prev + 1;
-        }
-        return prev;
-      });
-    }, 10)
-
-    return () => clearInterval(interval);
-  }, []);
-  
-  useEffect(() => {
-    const interval = setInterval(() => {
-      setYearsOfExperience((prev) => {
-        if (prev < 5) {
-          return prev + 1;
-        }
-        return prev;
-      });
-    }, 10)
-
-    return () => clearInterval(interval);
-  }, []);
-
   return (
     <>
-    <div className="flex flex-col w-full md:flex-row flex-1 justify-around items-center mb-40">
-      <div className="flex flex-col justify-center items-center gap-5">
-        <h1 className="font-bold text-3xl md:text-6xl">{projects}+</h1>
-        <p className="text-slate-400 font-semibold leading-6 tracking-wide">completed projects</p>
-      </div>
-      <div className="flex flex-col justify-center items-center gap-5">
-        <h1 className="font-bold text-3xl md:text-6xl">{clients}+</h1>
-        <p className="text-slate-400 font-semibold leading-6 tracking-wide">clients around Africa</p>
-      </div>
-      <div className="flex flex-col justify-center items-center gap-5">
-        <h1 className="font-bold text-3xl md:text-6xl">{yearsOfExperience}+</h1>
-        <p className="text-slate-400 font-semibold leading-6 tracking-wide">Years in the real estate industry</p>
-      </div>
-    </div>
+    
     <h1 className="text-[#EFDE68] text-center font-bold text-xl">
       TESTIMONIALS
     </h1>

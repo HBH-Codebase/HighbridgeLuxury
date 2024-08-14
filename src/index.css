@@ -5,7 +5,11 @@
 @layer base {
   :root {
     --background: #231942;
-    --gradient-backround: radial-gradient(circle at 100% 8%, #502274 0%, #231942 100%);
+    --gradient-background: radial-gradient(ellipse at 500% 50%, #4F1271 0%, #231942 100%);
+  
+    --gradient-text: linear-gradient(90deg, #A42CD6 0%, #F2AF29 100%);
+
+    --primary-gradient: linear-gradient(187deg, #783F8E 0%, #4F1271 100%);
     
     --primary-text: #C6CAED;
     --secondary-text: #ADA8BE;
@@ -31,5 +35,21 @@
 
   .flex-around {
     @apply flex justify-around items-center;
+  }
+
+  .gradient-text {
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-image: var(--gradient-text);
+  }
+
+  .gradient-primary {
+    background: var(--primary-gradient);
+    padding: 10px;
+  }
+
+  .gradient-bg {
+    background: var(--gradient-background);
   }
 }

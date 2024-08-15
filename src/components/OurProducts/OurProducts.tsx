@@ -1,36 +1,20 @@
-import { OurProjects } from "@/constants"
-import PropertyCard from "../shared/propertyCard/PropertyCard"
+import SwiperProduct from "../Swiper/Swiper"
 
 const OurProducts = () => {
   return (
-    <div className="w-full md:w-9/12">
-      <h1 className="text-center text-xl font-bold text-[#EFDE68]">
-        HIGHBRIDGE LUXURY DEVELOPMENT PROJECTS
+    <div className="px-10 lg:container">
+      <h1 className="heading-text mb-5">
+        Our Projects
       </h1>
-      <div className="flex flex-wrap flex-col justify-center items-between gap-6">
-        <h1 className="font-bold text-xl md:text-2xl lg:text-3xl text-[#5D0265] text-center">
+      <div className="w-full overflow-hidden mb-20">
+        <h1 className="font-bold text-lg md:text-xl lg:text-3xl gradient-text text-center mb-5">
           Highbridge Luxury Projects
         </h1>
-        <p className="text-lg font-semibold text-center">
+        <p className="text-sm md:text-base lg:text-xl text-primary-text font-semibold text-center lg:px-20 tracking-wider leading-10">
           We are known for mordern high-class projects and structures. Highbriddge Luxury has lots of projects ranging from lands, buildings, architectural designs and project management as well. We have handled over 500+ projects nationwide and our legacy preceeds us.
         </p>
-        <div className="flex flex-1 justify-center items-center py-10">
-          {OurProjects.length > 0 ?
-            <div>
-              {OurProjects.map((item) => (
-                <PropertyCard
-                  name={item.name}
-                  image={item.image}
-                  price={item.price}
-                  features={item.features}
-                  id={item.id}
-                  description={item.description}
-                  location={item.location}
-                />
-              ))}
-            </div>
-            :
-          <p className="text-slate-400 font-semibold text-center">No products yet</p>}
+        <div className="px-20 mt-10">
+          <SwiperProduct />
         </div>
       </div>
     </div>

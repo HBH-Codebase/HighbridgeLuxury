@@ -13,7 +13,7 @@ const RootLayout = () => {
         <Outlet />
       </main>
 
-      <footer>
+      <footer className="bg-purple-950/55">
         <Footer />
       </footer>
     </main>

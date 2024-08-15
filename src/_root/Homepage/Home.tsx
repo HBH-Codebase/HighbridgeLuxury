@@ -7,6 +7,7 @@ import Testimonials from "@/components/Testimonials/Testimonials"
 import Blog from "@/components/Blog/Blog"
 import SEO from "@/components/SEO/SEO"
 import Numbers from "@/components/Numbers/Numbers"
+import Investment from "@/components/Investment/Investment"
  
 const Home = () => {
   return (
@@ -26,6 +27,11 @@ const Home = () => {
       <Project />
       <OurServices />
       <OurProducts />
+
+      <section className="px-10 my-20">
+        <Investment />
+      </section>
+      
       <Testimonials />
       <Blog />
     </>

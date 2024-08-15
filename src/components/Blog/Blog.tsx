@@ -2,18 +2,19 @@ import { BlogPosts } from "@/constants"
 
 const Blog = () => {
   return (
-    <div className="flex flex-col justify-center items-center">
-      <h1 className="font-bold text-3xl md:text-4xl">Our Blog Posts</h1>
+    <section className="px-10 lg:container mt-20 mb-32">
+      <h1 className="heading-text mb-5">Our Blog Posts</h1>
+      <p className="text-primary-text text-center text-base md:text-lg lg:text-xl">Visit our blog page to see recent activities and articles.</p>
       <div className="mt-10 ">
         {
-          BlogPosts.length > 0 ? BlogPosts.map((blogs) => (
-            <div>
+          BlogPosts.length > 0 ? BlogPosts.map((blogs, idx) => (
+            <div key={idx}>
               {blogs}
             </div>
-          )) : <p className="text-slate-400 text-lg ">No blog post to show</p>
+          )) : <p className="text-primary text-lg text-center">No blog post to show</p>
         }
       </div>
-    </div>
+    </section>
   )
 }
 

@@ -26,6 +26,7 @@ module.exports = {
 
         background: "var(--background)",
         "gradient-primary": "var(--primary-gradient)",
+
       },
     },
   },

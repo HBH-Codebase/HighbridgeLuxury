@@ -1,9 +1,7 @@
-import { Button } from "../ui/button";
 import { AiOutlineSecurityScan, AiTwotoneHome } from "react-icons/ai"
 import { BsFileBarGraph } from "react-icons/bs"
 import { MdOutlineAttachMoney } from "react-icons/md"
 import { CardComponent } from "../shared/Card";
-import { Link } from "react-router-dom";
 
 const mission = [
   {

@@ -1,5 +1,3 @@
-import { Link } from "react-router-dom";
-import { Button } from "../ui/button";
 import hero from '/assets/hero.png';
 
 const     HeroSection = () => {

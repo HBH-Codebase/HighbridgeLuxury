@@ -4,7 +4,6 @@ import 'swiper/swiper-bundle.css';
 
 import { OurProjects } from '@/constants';
 import PropertyCard from '../shared/propertyCard/PropertyCard';
-import { RiArrowGoBackFill, RiArrowGoForwardFill } from 'react-icons/ri';
 import { FiArrowLeftCircle, FiArrowRightCircle } from 'react-icons/fi';
 
 const SwiperProduct = () => {

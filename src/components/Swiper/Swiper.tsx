@@ -1,4 +1,4 @@
-import { useRef } from 'react';
+import { useState } from 'react';
 import { Swiper, SwiperSlide} from 'swiper/react';
 import 'swiper/swiper-bundle.css';
 
@@ -7,57 +7,63 @@ import PropertyCard from '../shared/propertyCard/PropertyCard';
 import { FiArrowLeftCircle, FiArrowRightCircle } from 'react-icons/fi';
 
 const SwiperProduct = () => {
-  const swiperRef = useRef<Swiper | null>(null);
+  const [swiper, setSwiper] = useState<any>(null);
 
   const handleNextClick = () => {
-    if (swiperRef.current) {
-      swiperRef.current.swiper.slideNext();
+    if (swiper) {
+     swiper.slideNext();
     }
   }
 
   const handlePrevClick = () => {
-    if (swiperRef.current) {
-      swiperRef.current.swiper.slidePrev();
+    if (swiper) {
+      swiper.slidePrev();
     }
   }
 
   return (
     <>
-    <div className='hidden lg:block swiper'>
+    <div className='w-full'>
       <Swiper
-        ref={swiperRef}
-        spaceBetween={0}
+        spaceBetween={100}
         slidesPerView={3}
-        speed={500}
-        loop={true}
-        touchRatio={1.5}
         pagination={{ clickable: true }}
-        >
-        {OurProjects.length > 0 ?
-          <>
-          <div className='swipper-wrapper'>
-            {OurProjects.map((item) => (
-              <div className='swipper-slide'>
-                <SwiperSlide key={item.id}>
-                  <PropertyCard
-                    name={item.name}
-                    image={item.image}
-                    price={item.price}
-                    features={item.features}
-                    id={item.id}
-                    description={item.description}
-                    location={item.location}
-                    />
-                </SwiperSlide>
-              </div>
-            ))}
-          </div>
-          </>
-          :
-          <p className="text-slate-400 font-semibold text-center">No products yet</p>
-        }
+        onSwiper={(swiperInstance) => setSwiper(swiperInstance)}
+        autoplay={{delay: 3000}}
+        breakpoints={{
+          1200: {
+            slidesPerView: 3,
+            spaceBetween: 40
+          },
+          968: {
+            slidesPerView: 2.5,
+            spaceBetween: 40
+          },
+          600: {
+            slidesPerView: 2,
+            spaceBetween: 60
+          },
+          480: {
+            slidesPerView: 3,
+            spaceBetween: 100
+          }
+        }}
+      >
+        {OurProjects.map((item) => (
+          <SwiperSlide key={Math.floor(Math.random() * 1000)}>
+            <PropertyCard
+              name={item.name}
+              image={item.image}
+              price={item.price}
+              features={item.features}
+              id={item.id}
+              description={item.description}
+              location={item.location}
+            />
+          </SwiperSlide>
+        ))}
       </Swiper>
-      <div className='flex-between mt-10 w-24'>
+      <div className='flex-between mt-10 w-full md:w-24'>
         <button onClick={handlePrevClick}>
           <FiArrowLeftCircle size={40} color='#F2AF29' />
         </button>

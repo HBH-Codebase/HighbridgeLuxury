@@ -1,5 +1,7 @@
 // import SwiperProduct from "../Swiper/Swiper"
 
+import SwiperProduct from "../Swiper/Swiper"
+
 const OurProducts = () => {
   return (
     <div className="px-10 lg:container">
@@ -14,7 +16,7 @@ const OurProducts = () => {
           We are known for mordern high-class projects and structures. Highbriddge Luxury has lots of projects ranging from lands, buildings, architectural designs and project management as well. We have handled over 500+ projects nationwide and our legacy preceeds us.
         </p>
         <div className="px-20 mt-10">
-          {/* <SwiperProduct /> */}
+          <SwiperProduct />
         </div>
       </div>
     </div>

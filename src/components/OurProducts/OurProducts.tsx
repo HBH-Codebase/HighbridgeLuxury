@@ -1,5 +1,3 @@
-// import SwiperProduct from "../Swiper/Swiper"
-
 import SwiperProduct from "../Swiper/Swiper"
 
 const OurProducts = () => {

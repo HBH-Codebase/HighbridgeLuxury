@@ -6,7 +6,7 @@ import Root from "./Root"
 import { HelmetProvider } from "react-helmet-async";
 
 const router = createBrowserRouter([
-  {path: '/', element: <Root />},
+  {path: '*', element: <Root />},
 ]);
 
 

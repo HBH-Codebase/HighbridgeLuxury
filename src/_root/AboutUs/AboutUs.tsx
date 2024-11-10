@@ -1,14 +1,15 @@
 import Cards from "@/components/shared/Objectives/Cards";
-import SectionHeading from "@/components/shared/SectionHeading";
-import Topbanner from "@/components/shared/Topbanner";
 import { Button } from "@/components/ui/button";
 import { FaAngleRight, FaAward, FaHouseCircleXmark, FaUsers } from "react-icons/fa6";
 import { Link } from "react-router-dom";
 const AboutUs = () => {
   return (
-    <div className="w-full pb-40">
-      <Topbanner text="About Us" />
-      <div className="w-full md:w-[90%] mx-auto">
+    <div className="w-full px-10 lg:container">
+      <div className="w-full">
+        <h1 className="heading-text text-lg md:text-xl">About Us</h1>
+        <p className="text-secondary-text text-sm md:text-base lg:text-lg">At Highbridge Luxury Development, exclusivity is our watch word and we are dedicated to providing luxurious apartments and lands</p>
+      </div>
+      <div className="w-full">
         <div className="flex flex-col md:flex-row items-start gap-10 px-6 pb-20 md:px-10 py-20">
           <div className="w-full overflow-hidden order-2 lg:order-1 pt-20">
             <img
@@ -18,7 +19,6 @@ const AboutUs = () => {
             />
           </div>
           <div className="w-full">
-            <SectionHeading text='About Us' />
             <div className="w-full md:w-96 flex flex-col justify-start items-between gap-6">
               <h1 className="text-lg md:text-xl lg:text-2xl font-bold tracking-wider leading-7">Let's Build Something Strong Together</h1>
               <p className="text-sm lg:text-base text-slate-600 tracking-wider leading-7">We provide the most professional, informative, loyal and dedicated service in the Real Estate sector. The best interest/ Concerns of our clients will always come first on our daily priorities and routine. Our vision is to be the most client centric organization, to build best in-class platforms where clients can come to find and discover every need in Real Estate</p>
@@ -64,7 +64,6 @@ const AboutUs = () => {
       </div>
       <div className="w-full bg-gray-50 py-20 px-4">
         <div className="w-full md:w-[90%] mx-auto">
-          <SectionHeading text="Best Our Services More" />
           <div className="flex flex-col md:flex-row justify-center md:justify-between items-center gap-3">
             <h1 className="text-xl md:text-2xl lg:text-4xl text-center leading-6 font-bold tracking-wider">Our People-Oriented Objectives</h1>
             <Button className="bg-[#EFDE6B] font-semibold text-base text-[#5D0265] tracking-tight leading-6 mt-6" asChild>
@@ -84,7 +83,6 @@ const AboutUs = () => {
       </div>
       <div className="w-full py-20 px-4">
         <div className="w-full md:w-[90%] mx-auto">
-          <SectionHeading text="Meet Our Team" />
           <p className="text-xs text-gray-300 tracking-wider leading-7 text-center">No Team Memebers Yet!!!</p>
         </div>
       </div>

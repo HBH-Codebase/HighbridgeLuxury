@@ -1,10 +1,8 @@
 import LoginForm from "@/components/LoginForm/LoginForm"
-import Topbanner from "@/components/shared/Topbanner"
 
 const RealtorsArena = () => {
   return (
     <div className='w-full'>
-      <Topbanner text="Realtors' Arena" />
       <div className="relative flex overflow-hidden">
         <div className="w-full md:basis-2/5 md:pt-24 lg:pt-32 pt-24 pb-44 px-6">
           <LoginForm />

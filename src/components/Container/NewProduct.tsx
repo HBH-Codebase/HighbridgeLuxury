@@ -1,4 +1,6 @@
+import { Link } from "react-router-dom";
 import LandMarks from "../shared/LandMarks";
+import { Button } from "../ui/button";
 import banner from "/assets/maj-lagos.jpg";
 
 const NewProduct = () => {
@@ -36,6 +38,13 @@ const NewProduct = () => {
         <LandMarks landmark="landmarks3.jpg" />
         <LandMarks landmark="landmarks4.jpg" />
         <LandMarks landmark="landmarks5.jpg" />
+      </div>
+      <div className="w-full flex justify-center items-center mt-10 hover:scale-105 transition-all">
+        <Button type="button" className="w-44 lg:w-72 h-12" asChild>
+          <Link to="" className="text-gray-100 font-semibold">
+            Learn more
+          </Link>
+        </Button>
       </div>
     </section>
   );

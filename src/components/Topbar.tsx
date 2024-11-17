@@ -1,4 +1,4 @@
-import { Link, NavLink, useLocation } from "react-router-dom";
+import { HashRouter, Link, NavLink, useLocation } from "react-router-dom";
 import { NavLinks } from "../constants";
 import { Button } from "./ui/button";
 import {
@@ -51,7 +51,7 @@ const Topbar = () => {
           asChild
         >
           <Link
-            to="/contact-us"
+            to="/#contact-us"
             className="text-secondary hover:text-white text-base lg:text-lg text-center"
           >
             Contact Us

@@ -3,7 +3,7 @@ import hero from "/assets/hero.png";
 const HeroSection = () => {
   return (
     <div className="w-full px-10 xl:wrapper flex-between flex-col lg:flex-row">
-      <div className="flex-between flex-col gap-5 px-6">
+      <div className="flex-between flex-col flex-1 gap-5">
         <h1 className="text-sm text-secondary-text tracking-wide font-semibold leading-9">
           LUXURY REAL ESTATE EXCELLENCE
         </h1>
@@ -16,7 +16,7 @@ const HeroSection = () => {
           commitment to excellence.{" "}
         </p>
       </div>
-      <div className="w-full mt-6 px-6">
+      <div className="w-96 mt-6">
         <img src={hero} alt="hero" className="object-cover h-full w-full" />
       </div>
     </div>

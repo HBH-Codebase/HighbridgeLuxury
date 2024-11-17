@@ -22,7 +22,7 @@ const OurProducts = () => {
         </p>
         <Link
           to="/our-projects"
-          className="bg-background rounded-md text-secondary-text px-10 py-3"
+          className="bg-background rounded-md text-secondary-text px-10 py-3 hover:scale-105 transition-all"
         >
           View More
         </Link>

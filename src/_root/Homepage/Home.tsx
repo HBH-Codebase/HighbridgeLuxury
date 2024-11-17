@@ -29,7 +29,6 @@ const Home = () => {
       <NewProduct />
       <OurProducts />
       <Incentives />
-      <ContactForm />
     </>
   );
 };

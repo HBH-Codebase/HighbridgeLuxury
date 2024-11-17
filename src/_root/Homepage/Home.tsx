@@ -1,14 +1,14 @@
-import OurServices from "@/components/OurServices/OurServices"
-import HeroSection from "../../components/HeroSection/HeroSection"
-import Mission from "../../components/Mission/Mission"
-import Project from "../Projects/Project"
-import OurProducts from "@/components/OurProducts/OurProducts"
-import Testimonials from "@/components/Testimonials/Testimonials"
-import Blog from "@/components/Blog/Blog"
-import SEO from "@/components/SEO/SEO"
-import Numbers from "@/components/Numbers/Numbers"
-import Investment from "@/components/Investment/Investment"
- 
+import HeroSection from "../../components/HeroSection/HeroSection";
+import CompanyCode from "@/components/Container/CompanyCode";
+import WhatWeOffer from "@/components/Container/WhatWeOffer";
+import HowToBecomeALandlord from "@/components/Container/HowToBecomeALandlord";
+import BuyToFlip from "@/components/Container/BuyToFlip";
+import OurProducts from "@/components/Container/OurProducts";
+import ContactForm from "@/components/Container/ContactForm";
+import SEO from "@/components/SEO/SEO";
+import NewProduct from "@/components/Container/NewProduct";
+import Incentives from "@/components/shared/Incentives";
+
 const Home = () => {
   return (
     <>
@@ -20,22 +20,18 @@ const Home = () => {
       />
       <section className="gradient-bg">
         <HeroSection />
+        <CompanyCode />
       </section>
 
-      <Numbers />
-      <Mission />
-      <Project />
-      <OurServices />
+      <WhatWeOffer />
+      <HowToBecomeALandlord />
+      <BuyToFlip />
+      <NewProduct />
       <OurProducts />
-
-      <section className="px-10 my-20">
-        <Investment />
-      </section>
-      
-      <Testimonials />
-      <Blog />
+      <Incentives />
+      <ContactForm />
     </>
-  )
-}
+  );
+};
 
-export default Home
+export default Home;

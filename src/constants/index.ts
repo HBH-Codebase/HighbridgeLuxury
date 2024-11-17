@@ -18,7 +18,7 @@ export const NavLinks = <TNavLinks[]>[
   },
   {
     label: "Realtors Arena",
-    path: "/realtors-arena",
+    path: "https://www.highbridgehomesltd.com/become-realtor/",
   },
 ];
 

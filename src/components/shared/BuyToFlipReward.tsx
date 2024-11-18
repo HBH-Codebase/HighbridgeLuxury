@@ -6,7 +6,7 @@ const BuyToFlipReward = () => {
       <h3 className="text-2xl font-semibold text-center">
         When You Invest In Buy To Flip, You get...
       </h3>
-      <div className="w-full md:flex flex-col md:flex-row justify-center gap-10 place-content-start mt-10">
+      <div className="w-full xl:wrapper md:flex flex-col md:flex-row justify-center gap-10 place-content-start mt-10">
         <BTFReward
           text="Receipt Of Payment"
           desc="This is a document that shows the amount you have invest alongside your other information like full name, addresss and others"

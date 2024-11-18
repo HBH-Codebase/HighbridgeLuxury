@@ -1,4 +1,4 @@
-import { HashRouter, Link, NavLink, useLocation } from "react-router-dom";
+import { Link, NavLink, useLocation } from "react-router-dom";
 import { NavLinks } from "../constants";
 import { Button } from "./ui/button";
 import {
@@ -88,7 +88,7 @@ const Topbar = () => {
               </SheetTitle>
             </SheetHeader>
             <div className="lg:hidden flex flex-col">
-              <ul className="mt-2">
+              <ul className="mt-20 mb-44">
                 {NavLinks.map((item, idx) => {
                   return (
                     <li

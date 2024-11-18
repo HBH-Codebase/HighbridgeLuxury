@@ -39,15 +39,23 @@ const Mission = () => {
               Our Mission
             </h3>
             <p className="text-sm text-secondary-text font-light">
-              We are not just any real estate company we are Highbridge Luxury
-              and our result preceeds us.
+              Our team approach philosophy ensures your needs are important to
+              each and every members of our organization, thereby creating
+              unparalleled opportunities to all our clients looking to own or
+              sell Real Estate; as we are most dedicated to the development of
+              long term client relationship; we are committed to delivering a
+              dream of affordable luxury homes
             </p>
             <h3 className="text-gray-600 font-semibold text-xl my-2">
               Our Vision
             </h3>
             <p className="text-sm text-secondary-text font-light">
-              We are not just any real estate company we are Highbridge Luxury
-              and our result preceeds us.
+              We provide the most professional, informative, loyal and dedicated
+              service in the Real Estate sector. The best interest/Concerns of
+              our clients will always come first on our daily priorities and
+              routine. Our vision is to be the most client centric organization,
+              to build best in-class platforms where clients can come to find
+              and discover every need in Real Estate
             </p>
           </div>
         </div>

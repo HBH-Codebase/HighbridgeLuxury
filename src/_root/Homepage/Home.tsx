@@ -4,7 +4,6 @@ import WhatWeOffer from "@/components/Container/WhatWeOffer";
 import HowToBecomeALandlord from "@/components/Container/HowToBecomeALandlord";
 import BuyToFlip from "@/components/Container/BuyToFlip";
 import OurProducts from "@/components/Container/OurProducts";
-import ContactForm from "@/components/Container/ContactForm";
 import SEO from "@/components/SEO/SEO";
 import NewProduct from "@/components/Container/NewProduct";
 import Incentives from "@/components/shared/Incentives";

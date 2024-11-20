@@ -9,15 +9,33 @@ const Mission = () => {
           </h2>
           <div className="flex flex-col md:flex-row justify-center items-center lg:items-start gap-6 mt-10">
             <div className="flex flex-col justify-center items-center gap-3">
-              <div className="w-16 h-16 bg-gray-400 rounded-full" />
+              <div className="w-16 h-16 bg-gray-200 rounded-full overflow-hidden flex-center p-4">
+                <img
+                  src="/assets/insurance.png"
+                  alt="insurance"
+                  className="w-24 h-24 object-contain"
+                />
+              </div>
               <p className="text-sm text-secondary-text">Finished Apartments</p>
             </div>
             <div className="flex flex-col justify-center items-center gap-3">
-              <div className="w-16 h-16 bg-gray-400 rounded-full" />
+              <div className="w-16 h-16 bg-gray-200 rounded-full overflow-hidden flex-center p-5">
+                <img
+                  src="/assets/town.png"
+                  alt="insurance"
+                  className="w-24 h-24 object-contain"
+                />
+              </div>
               <p className="text-sm text-secondary-text">Lands</p>
             </div>
             <div className="flex flex-col justify-center items-center gap-3">
-              <div className="w-16 h-16 bg-gray-400 rounded-full" />
+              <div className="w-16 h-16 bg-gray-200 rounded-full overflow-hidden flex-center p-5">
+                <img
+                  src="/assets/apartment.png"
+                  alt="insurance"
+                  className="w-24 h-24 object-contain"
+                />
+              </div>
               <p className="text-sm text-secondary-text">
                 Real Estate Investment
               </p>
@@ -25,7 +43,13 @@ const Mission = () => {
           </div>
         </div>
         <div className="mt-20 flex flex-col lg:flex-row gap-3">
-          <div className="w-full lg:w-1/2 h-96 bg-gray-400 rounded-lg"></div>
+          <div className="w-full lg:w-1/2 bg-gray-400 rounded-lg">
+            <img
+              src="/assets/architecture.jpg"
+              alt="mission"
+              className="w-full h-full object-cover rounded-lg"
+            />
+          </div>
           <div className="px-3 flex-1">
             <p className="gradient-text font-bold text-sm">About Us</p>
             <h2 className="text-secondary font-bold text-3xl my-2">

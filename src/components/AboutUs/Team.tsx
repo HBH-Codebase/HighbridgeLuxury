@@ -9,10 +9,55 @@ const Team = () => {
         Olawale Popoola. We have just one goal which is to help you achieve a
         seamsless journey into becoming a landlord in any of our luxury estates.
       </p>
-      <div className="w-full flex flex-col justify-center items-center md:flex-row flex-wrap gap-3 mt-6 px-10 xl:px-0">
-        <div className="w-64 h-72 bg-gray-400 rounded-lg" />
-        <div className="w-64 h-72 bg-gray-400 rounded-lg" />
-        <div className="w-64 h-72 bg-gray-400 rounded-lg" />
+      <div className="w-full flex flex-col justify-center items-center md:items-start md:flex-row flex-wrap gap-3 mt-6 px-10 xl:px-0">
+        <div className="w-64 bg-gray-400 rounded-lg">
+          <figure className="w-full h-full relative">
+            <img
+              src="/assets/md.jpg"
+              alt="team-member"
+              className="w-full object-cover"
+            />
+            <figcaption className="absolute bottom-0 left-0 p-2 w-4/5 bg-primary rounded-tr-2xl border-r-4 border-gray-100 text-gray-100 text-sm mg:text-base font-bold">
+              <strong>Engr. Olawale Popoola</strong>
+              <br />
+              <span className="text-xs text-primary-text">
+                Chairman Highbridge Group
+              </span>
+            </figcaption>
+          </figure>
+        </div>
+        <div className="w-64 bg-gray-400 rounded-lg">
+          <figure className="w-full h-full relative">
+            <img
+              src="/assets/ed.png"
+              alt="team-member"
+              className="w-full object-cover"
+            />
+            <figcaption className="absolute bottom-0 left-0 p-2 w-4/5 bg-primary rounded-tr-2xl border-r-4 border-gray-100 text-gray-100 text-sm mg:text-base font-bold">
+              <strong>Busola Popoola</strong>
+              <br />
+              <span className="text-xs text-primary-text">
+                Chairlady Highbridge Group
+              </span>
+            </figcaption>
+          </figure>
+        </div>
+        <div className="w-64 bg-gray-400 rounded-lg">
+          <figure className="w-full h-full relative">
+            <img
+              src="/assets/hr.jpg"
+              alt="team-member"
+              className="w-full object-cover"
+            />
+            <figcaption className="absolute bottom-0 left-0 p-2 w-4/5 bg-primary rounded-tr-2xl border-r-4 border-gray-100 text-gray-100 text-sm mg:text-base font-bold">
+              <strong>Ms. Ezenwanagor Lilian</strong>
+              <br />
+              <span className="text-xs text-primary-text">
+                HR Highbridge Group
+              </span>
+            </figcaption>
+          </figure>
+        </div>
       </div>
     </section>
   );

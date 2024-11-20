@@ -1,6 +1,5 @@
 import { NavLink, useLocation } from "react-router-dom";
 import { NavLinks } from "../constants";
-import { HashLink } from "react-router-hash-link";
 import { Button } from "./ui/button";
 import {
   Sheet,
@@ -51,13 +50,12 @@ const Topbar = () => {
           className="rounded-md bg-primary border-none hidden lg:flex-center "
           asChild
         >
-          <HashLink
-            smooth
-            to="#contact-us"
+          <a
+            href="#contact-us"
             className="text-secondary hover:text-white text-base lg:text-lg text-center"
           >
             Contact Us
-          </HashLink>
+          </a>
         </Button>
       </div>
       <div className="px-6 lg:hidden flex-between items-center relative">
@@ -116,13 +114,13 @@ const Topbar = () => {
                 className="w-[60%] mt-24 rounded-md bg-primary border-none outline-none flex-center px-12"
                 asChild
               >
-                <HashLink
-                  smooth
-                  to="#contact-us"
+                <a
+                  href="#contact-us"
                   className="text-secondary text-xl"
+                  scroll-behavior="smooth"
                 >
                   Contact Us
-                </HashLink>
+                </a>
               </Button>
             </div>
             <SheetFooter>

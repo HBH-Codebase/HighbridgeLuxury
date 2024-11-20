@@ -1,10 +1,17 @@
 import React from "react";
+import { TbBrandPushbullet } from "react-icons/tb";
 
 const WhyChooseUs = () => {
   return (
     <React.Fragment>
       <div className="w-full px-10 xl:wrapper flex flex-col lg:flex-row gap-4 my-20">
-        <div className="w-full lg:w-1/2 h-96 bg-gray-400 rounded-lg" />
+        <div className="w-full lg:w-1/2 h-96 bg-gray-400 rounded-lg">
+          <img
+            src="/assets/building.jpg"
+            alt="building"
+            className="w-full h-full object-cover rounded-lg"
+          />
+        </div>
         <div className="flex-1">
           <p className="gradient-text">Why Choose Us?</p>
           <h1 className="text-secondary font-bold text-lg mt-6">
@@ -15,7 +22,9 @@ const WhyChooseUs = () => {
           </p>
           <div className="mt-6 flex flex-col md:grid grid-cols-2 gap-3 items-start">
             <div className="flex justify-center items-center gap-2">
-              <div className="w-10 h-10 bg-gray-500 rounded-full" />
+              <div className="w-10 h-10 rounded-full">
+                <TbBrandPushbullet />
+              </div>
               <div className="flex-1">
                 <h3 className="text-gradient text-sm tracking-wide font-semibold">
                   High quality products
@@ -26,7 +35,9 @@ const WhyChooseUs = () => {
               </div>
             </div>
             <div className="flex justify-center items-center gap-2">
-              <div className="w-10 h-10 bg-gray-500 rounded-full" />
+              <div className="w-10 h-10 rounded-full">
+                <TbBrandPushbullet />
+              </div>
               <div className="flex-1">
                 <h3 className="text-gradient text-sm tracking-wide font-semibold">
                   Professional service
@@ -37,7 +48,9 @@ const WhyChooseUs = () => {
               </div>
             </div>
             <div className="flex justify-center items-center gap-2">
-              <div className="w-10 h-10 bg-gray-500 rounded-full" />
+              <div className="w-10 h-10 rounded-full">
+                <TbBrandPushbullet />
+              </div>
               <div className="flex-1">
                 <h3 className="text-gradient text-sm tracking-wide font-semibold">
                   24/7 customer service
@@ -48,7 +61,9 @@ const WhyChooseUs = () => {
               </div>
             </div>
             <div className="flex justify-center items-center gap-2">
-              <div className="w-10 h-10 bg-gray-500 rounded-full" />
+              <div className="w-10 h-10 rounded-full">
+                <TbBrandPushbullet />
+              </div>
               <div className="flex-1">
                 <h3 className="text-gradient text-sm tracking-wide font-semibold">
                   Strong Titles

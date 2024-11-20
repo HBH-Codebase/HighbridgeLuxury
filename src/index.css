@@ -24,6 +24,10 @@
     --secondary: #f2af29;
   }
 
+  html {
+    scroll-behavior: smooth;
+  }
+
   body {
     font-family: "Manrope", sans-serif;
     font-optical-sizing: auto;

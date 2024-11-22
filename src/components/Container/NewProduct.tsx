@@ -33,7 +33,7 @@ const NewProduct = () => {
       <h3 className="text-secondary-text text-2xl font-semibold text-center">
         Majestic Landmarks
       </h3>
-      <div className="flex justify-center items-center flex-col gap-10 xl:wrapper md:flex-row flex-wrap overflow-hidden mt-10 xl:mt-0">
+      <div className="flex justify-center items-center flex-col gap-10 xl:gap-3 xl:wrapper md:flex-row flex-wrap overflow-hidden mt-10 xl:mt-0">
         <LandMarks landmark="landmarks2.jpg" />
         <LandMarks landmark="landmarks3.jpg" />
         <LandMarks landmark="landmarks4.jpg" />
@@ -41,7 +41,10 @@ const NewProduct = () => {
       </div>
       <div className="w-full flex justify-center items-center mt-10 hover:scale-105 transition-all">
         <Button type="button" className="w-44 lg:w-72 h-12" asChild>
-          <Link to="" className="text-gray-100 font-semibold">
+          <Link
+            to="our-projects/majestic-lagos"
+            className="text-gray-100 font-semibold"
+          >
             Learn more
           </Link>
         </Button>

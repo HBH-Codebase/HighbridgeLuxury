@@ -1,6 +1,6 @@
 const LandMarks = ({ landmark }: { landmark: string }) => {
   return (
-    <div className="w-full md:w-44 flex flex-col rounded-md">
+    <div className="w-full md:w-40 flex flex-col rounded-md">
       <img
         src={`/assets/${landmark}`}
         alt="landmark"

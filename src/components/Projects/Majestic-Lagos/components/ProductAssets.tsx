@@ -1,8 +1,8 @@
 const ProductAssets = () => {
   return (
-    <div className="w-full xl:wrapper flex flex-col lg:flex-row gap-3">
+    <div className="w-full xl:wrapper flex flex-col lg:flex-row pb-20 gap-3">
       <iframe
-        width="560"
+        width="100%"
         height="315"
         src="https://www.youtube.com/embed/Lc4h8rZCAL0?si=-_OBltkt76yjlBIf"
         title="YouTube video player"

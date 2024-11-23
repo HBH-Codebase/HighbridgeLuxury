@@ -10,7 +10,7 @@ import Incentives from "@/components/shared/Incentives";
 
 const Home = () => {
   return (
-    <>
+    <section className="pb-24">
       <SEO
         name="Highbridge Luxury Development Limited"
         title="Home | Affordable Luxury Apartments In Lagos - Call us Now"
@@ -28,7 +28,7 @@ const Home = () => {
       <NewProduct />
       <OurProducts />
       <Incentives />
-    </>
+    </section>
   );
 };
 

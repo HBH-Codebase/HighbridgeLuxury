@@ -2,8 +2,8 @@ import { CiCircleCheck } from "react-icons/ci";
 
 const Benefits = () => {
   return (
-    <div className="flex flex-col lg:flex-row gap-3 my-10">
-      <div className="w-1/2 px-6 py-5 rounded-lg bg-white">
+    <div className="flex flex-col md:flex-row lg:flex-row gap-3">
+      <div className="w-full md:w-1/2 px-6 py-5 rounded-lg bg-white">
         <h3 className="text-sm font-bold tracking-wide leading-4">BENEFITS</h3>
         <p className="text-[10px] text-gray-600 my-3 tracking-wide leading-4">
           1. Prime Location: Majestic Lagos benefits from its strategic
@@ -23,7 +23,7 @@ const Benefits = () => {
           for future appreciation.
         </p>
       </div>
-      <div className="w-1/2 px-6 py-5 rounded-lg bg-white">
+      <div className="w-full md:w-1/2 px-6 py-5 rounded-lg bg-white">
         <h3 className="text-sm font-bold tracking-wide leading-4">
           FACILITIES
         </h3>

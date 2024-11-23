@@ -8,20 +8,20 @@ const SocialMedia = () => {
     <div className="flex justify-start items-center gap-3 mt-2">
       <Link to="">
         <MdFacebook
-          size={30}
-          className="text-gray-300 hover:text-white transition-colors"
+          size={25}
+          className="text-gray-400 scale-110 transition-colors"
         />
       </Link>
       <Link to="">
         <SiInstagram
-          size={25}
-          className="text-gray-300 hover:text-white transition-colors"
+          size={20}
+          className="text-gray-400 scale-110 transition-colors"
         />
       </Link>
       <Link to="">
         <FaTwitterSquare
-          size={25}
-          className="text-gray-300 hover:text-white transition-colors"
+          size={20}
+          className="text-gray-400 scale-110 transition-colors"
         />
       </Link>
     </div>

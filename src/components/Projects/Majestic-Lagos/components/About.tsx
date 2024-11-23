@@ -1,12 +1,12 @@
 const About = () => {
   return (
-    <div className="w-full">
-      <div className="w-full bg-white rounded-xl px-6 py-5">
+    <div className="w-full flex-1 bg-white rounded-xl p-10 flex flex-col gap-10">
+      <div className="w-full">
         <h1 className="text-base font-bold text-gray-800">
           ABOUT MAJESTIC LAGOS
         </h1>
       </div>
-      <div className="bg-white px-6 py-5 rounded-xl">
+      <div className="w-full">
         <h3 className="text-sm font-bold  tracking-wide leading-4">
           WELCOME TO MAJESTIC LAGOS!
         </h3>

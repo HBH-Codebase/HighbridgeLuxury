@@ -1,6 +1,6 @@
 const Subscription = () => {
   return (
-    <div className="bg-white p-5 rounded-lg shadow-md">
+    <div className="w-full lg:w-[30%] bg-white p-10 h-min lg:p-5 rounded-lg shadow-md">
       <h2 className="text-sm font-bold">Subscribe Now</h2>
       <div className="w-full">
         <ol className="list-decimal list-inside">

@@ -1,12 +1,8 @@
-import { FaTwitterSquare } from "react-icons/fa";
-import { MdFacebook } from "react-icons/md";
-import { SiInstagram } from "react-icons/si";
-import { Link } from "react-router-dom";
 import SocialMedia from "./SocialMedia";
 
 const ContactForm = () => {
   return (
-    <section id="contact-us" className="w-full bg-background mt-20 px-10">
+    <section id="contact-us" className="w-full bg-background px-10">
       <div className="w-full xl:wrapper flex-between flex-col gap-6 lg:flex-row my-20">
         <div className="flex flex-col gap-2">
           <h2 className="text-3xl font-bold text-secondary-text">Contact Us</h2>

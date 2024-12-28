@@ -1,6 +1,5 @@
 import { FaTwitterSquare } from "react-icons/fa";
 import { MdFacebook, MdWhatsapp } from "react-icons/md";
-import { SiInstagram } from "react-icons/si";
 import { Link } from "react-router-dom";
 
 const SocialMedia = () => {

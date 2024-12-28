@@ -1,4 +1,4 @@
-import { useRef } from "react";
+import { useRef, useState } from "react";
 
 interface CarouselProps {
   items: string[];
@@ -9,7 +9,7 @@ const Carousel: React.FC<CarouselProps> = ({ items }) => {
 
   function scrollCarousel(direction: "left" | "right") {
     if (carouselRef.current) {
-      const scrollAmount = 200;
+      const scrollAmount = 300;
       const scrollWidth = carouselRef.current.scrollWidth;
       const scrollLeft = carouselRef.current.scrollLeft;
 
@@ -26,18 +26,22 @@ const Carousel: React.FC<CarouselProps> = ({ items }) => {
   }
 
   return (
-    <div className="w-full flex-center flex-col">
+    <>
       <div
-        className="flex w-full lg:w-[300px] gap-10 overflow-hidden"
+        className="flex flex-row w-max overflow-x-scroll scroll-smooth"
         ref={carouselRef}
       >
         {items.map((item, index) => (
-          <img
-            key={index}
-            src={`/assets/${item}`}
-            alt="carousel-item"
-            className="w-full object-cover"
-          />
+          <div
+            key={`${items}-${index}`}
+            className="min-w-[310px] h-[470px] mr-2"
+          >
+            <img
+              src={`/assets/${item}`}
+              alt="carousel-item"
+              className="w-full h-full object-contain"
+            />
+          </div>
         ))}
       </div>
       <div className="flex gap-3 mt-10">
@@ -54,7 +58,7 @@ const Carousel: React.FC<CarouselProps> = ({ items }) => {
           {">"}
         </button>
       </div>
-    </div>
+    </>
   );
 };
 
